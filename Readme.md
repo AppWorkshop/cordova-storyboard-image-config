@@ -7,13 +7,13 @@ Copies files and config for iOS storyboard launch images.
 Meteor: 
 
 ```
-meteor add cordova:cordova-storyboard-image-config@1.0.0
+meteor add cordova:cordova-storyboard-image-config@1.0.1
 ```
 
 Cordova:
 
 ```
-cordova plugin add cordova-storyboard-image-config@1.0.0
+cordova plugin add cordova-storyboard-image-config@1.0.1
 ```
 
 ### Configuration
@@ -33,8 +33,7 @@ See the [example](./example/) folder for an example meteor project
   ```js
   App.appendToConfig(`
     <platform name="ios"> 
-        <config-file platform="ios" target="*-Info.plist">
-          <key>UILaunchStoryboardName</key>
+        <config-file platform="ios" target="*-Info.plist" parent="UILaunchStoryboardName">
           <string>CDVLaunchScreen</string>
         </config-file>
     </platform>
@@ -45,9 +44,9 @@ See the [example](./example/) folder for an example meteor project
 
   ```xml
   <platform name="ios"> 
-      <config-file platform="ios" target="*-Info.plist">
-        <key>UILaunchStoryboardName</key>
+      <config-file platform="ios" target="*-Info.plist" parent="UILaunchStoryboardName">
         <string>CDVLaunchScreen</string>
       </config-file>
   </platform>
   ```
+8. meteor npm install xml2js@0.4.19 lodash@4.17.4 cordova-lib@7.1.0 --save-dev

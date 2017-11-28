@@ -1,6 +1,6 @@
 {
   "name": "cordova-storyboard-image-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Copies files and config for iOS storyboard launch images",
   "cordova": {
     "id": "cordova-storyboard-image-config",

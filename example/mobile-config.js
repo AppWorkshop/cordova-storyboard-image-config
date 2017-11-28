@@ -28,8 +28,7 @@ App.appendToConfig(`
     <config-file platform="ios" target="*-Info.plist" parent="NSContactsUsageDescription">
       <string>Allows you to add contact details from your address book to forms.</string>
     </config-file>
-    <config-file platform="ios" target="*-Info.plist">
-      <key>UILaunchStoryboardName</key>
+    <config-file platform="ios" target="*-Info.plist" parent="UILaunchStoryboardName">
       <string>CDVLaunchScreen</string>
     </config-file>
 </platform>

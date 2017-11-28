@@ -22,25 +22,23 @@
     <li>
       (if using meteor) Add the following to your mobile-config.js :<br/>
       <pre>
-      App.appendToConfig(`
-        <platform name="ios"> 
-            <config-file platform="ios" target="*-Info.plist">
-              <key>UILaunchStoryboardName</key>
-              <string>CDVLaunchScreen</string>
-            </config-file>
-        </platform>
-      `);
+App.appendToConfig(`
+&lt;platform name="ios"&gt; 
+  &lt;config-file platform="ios" target="*-Info.plist" parent="UILaunchStoryboardName"&gt;
+    &lt;string&gt;CDVLaunchScreen&lt;/string&gt;
+  &lt;/config-file&gt;
+&lt;/platform&gt;
+`);
       </pre>
     </li>
     <li>
       (if using cordova) Add the following to your config.xml :<br/>
       <pre>
-      <platform name="ios"> 
-          <config-file platform="ios" target="*-Info.plist">
-            <key>UILaunchStoryboardName</key>
-            <string>CDVLaunchScreen</string>
-          </config-file>
-      </platform>
+&lt;platform name="ios"&gt; 
+    &lt;config-file platform="ios" target="*-Info.plist" parent="UILaunchStoryboardName"&gt;
+      &lt;string&gt;CDVLaunchScreen&lt;/string&gt;
+    &lt;/config-file&gt;
+&lt;/platform&gt;
       </pre>
     </li>
   </ol>
