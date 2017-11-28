@@ -11,6 +11,12 @@
   "devDependencies": {
     "cordova-lib": "^7.1.0",
     "lodash": "^4.17.4",
-    "xml2js": "^0.4.19"
+    "xml2js": "^0.4.19",
+    "elementtree": "^0.1.6",
+    "plist": "^2.1.0",
+    "xcode": "^0.9.3",
+    "colors": "^1.1.2",
+    "shelljs": "^0.7.0",
+    "tostr": "^0.1.0"
   }
 }
