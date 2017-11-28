@@ -1,0 +1,47 @@
+<head>
+  <title>test</title>
+</head>
+
+<body>
+  <h1>Test</h1>
+
+  {{> info}}
+</body>
+
+<template name="info">
+  <h2>Storyboard Splash for cordova (and meteor)</h2>
+  <ol>
+    <li>Add the plugin to your project.</li>
+    <li>(if using meteor) copy the cordova-build-override folder into your meteor project.</li>
+    <li>(if using cordova) copy the cordova-build-override/resources/ folder into your cordova project root.</li>
+    <li>Put the appropriate images in place of those in [cordova-build-override/]resources/LaunchStoryboard.imageset.
+      See <a href="https://github.com/apache/cordova-plugin-splashscreen#designing-launch-storyboard-images">here</a> for more information.
+    </li>
+    <li>Edit [cordova-build-override/]resources/LaunchStoryboard.imageset/Contents.json accordingly.
+    </li>
+    <li>
+      (if using meteor) Add the following to your mobile-config.js :<br/>
+      <pre>
+      App.appendToConfig(`
+        <platform name="ios"> 
+            <config-file platform="ios" target="*-Info.plist">
+              <key>UILaunchStoryboardName</key>
+              <string>CDVLaunchScreen</string>
+            </config-file>
+        </platform>
+      `);
+      </pre>
+    </li>
+    <li>
+      (if using cordova) Add the following to your config.xml :<br/>
+      <pre>
+      <platform name="ios"> 
+          <config-file platform="ios" target="*-Info.plist">
+            <key>UILaunchStoryboardName</key>
+            <string>CDVLaunchScreen</string>
+          </config-file>
+      </platform>
+      </pre>
+    </li>
+  </ol>
+</template>

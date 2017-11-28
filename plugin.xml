@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-storyboard-image-config" version="1.0.0">
+    <name>Cordova Meteor Storyboard Image Config</name>
+    <description>Copies files and config for iOS storyboard launch images</description>
+    <license>MIT</license>
+    <keywords>cordova,meteor,ios,launch,storyboard,images,splash,xcode</keywords>
+    <author>Mike Cunneen - The App Workshop</author>
+    <repo>https://github.com/AppWorkshop/cordova-storyboard-image-config.git</repo>
+    <engines>
+        <engine name="cordova" version=">=5.4.1" />
+        <engine name="cordova-ios" version=">=4.0.0" />
+        <engine name="apple-ios" version=">=10.0" />
+        <engine name="apple-xcode" version=">=7.2" />
+    </engines>
+    
+    <platform name="ios">
+        <hook type="before_prepare" src="scripts/beforePrepare.js" />
+    </platform>
+
+</plugin>

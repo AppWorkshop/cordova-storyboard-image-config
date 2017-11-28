@@ -1,0 +1,33 @@
+{
+  "name": "cordova-storyboard-image-config",
+  "version": "1.0.0",
+  "description": "Copies files and config for iOS storyboard launch images",
+  "cordova": {
+    "id": "cordova-storyboard-image-config",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AppWorkshop/cordova-storyboard-image-config"
+  },
+  "keywords": [
+    "cordova",
+    "meteor",
+    "ios",
+    "ios10",
+    "csp"
+  ],
+  "author": "Mike Cunneen - The App Workshop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AppWorkshop/cordova-storyboard-image-config/issues"
+  },
+  "homepage": "https://github.com/AppWorkshop/cordova-storyboard-image-config#readme",
+  "dependencies": {
+    "cordova-lib": "^7.1.0",
+    "lodash": "^4.17.4",
+    "xml2js": "^0.4.19"
+  }
+}
